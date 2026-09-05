@@ -29,7 +29,7 @@ model.fit(df)
 # ----------------------------------
 # [3] 예측 수행
 # ----------------------------------
-future = model.make_future_dataframe(periods=30, freq="Y")
+future = model.make_future_dataframe(periods=30, freq="YE")
 forecast = model.predict(future)
 
 # ----------------------------------
